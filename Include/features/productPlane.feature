@@ -22,17 +22,5 @@ Feature: Title of your feature
 
   @tag1
   Scenario: Title of your scenario outline
-    Given I am login using "facebook" account using "data_1"
-    And I choose 'hotel' to book
-    #And I choose book "lala"
-    #And I choose "plane" to book
-    #And I fill "Yogyakarta" as the destination city
-    #And I choose check in date "30/10/2020"
-    #And I choose check out date "30/11/2020"
-    #And I choose the 2 guest and 2 rooms
-    #And I submit the search
-    #Then The search results will be displayed
-    #And I filter the result based on the "Total Harga"
-    #Then The search results price will be displayed in "Total Harga"
-    
-    
+    Given I am login using 'google' account using 'google_data_1'
+    #And I choose 'plane' to book

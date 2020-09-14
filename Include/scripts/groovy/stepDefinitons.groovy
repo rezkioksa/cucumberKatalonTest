@@ -43,14 +43,54 @@ import cucumber.api.java.en.When
 
 
 
-class stepDefinitions {
+class stepDefinitons {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@Given("I am on (.*) site")
-	def goToUrl(String url) {
+	@Given("I am login using '(.*)' account using '(.*)'")
+	def I_login_by_socMed_account(String socMedType, String dataKey) {
+		println socMedType
+		println dataKey
+		if(socMedType.toLowerCase().equals('facebook')){
+			WebUI.callTestCase(findTestCase('Login using facebook'), ['dataId':dataKey], FailureHandling.STOP_ON_FAILURE)
+		}
+		else if (socMedType.toLowerCase().equals('google')){
+			WebUI.callTestCase(findTestCase('Login using gmail'), ['dataId':dataKey], FailureHandling.STOP_ON_FAILURE)
+		}
+		else{
+			KeywordUtil.markFailedAndStop('The title of page is not correct!')
+		}
 		
 	}
+
+	@And("I fill '(.*)' as the destination city")
+	def I_fill_the_destination_city(String city) {
+		println city
+		//		println dataKey
+	}
+
+	@And("I choose '(.*)' to book")
+	def I_choose_target_to_book(String key) {
+		key = key.toLowerCase()
+		println key
+		if(key.equals("hotel")){
+			println("The value is hotel");
+			WebUI.click(findTestObject('Object Repository/homePage/hotelButton'),FailureHandling.STOP_ON_FAILURE)
+		}
+		else if (key.equals('pesawat') || key.equals('plane')){
+			println("The value is pesawat");
+			WebUI.click(findTestObject('Object Repository/homePage/pesawatButton'),FailureHandling.STOP_ON_FAILURE)
+		}
+		else{
+			println("Another Value...")
+		}
+		
+}
+
+
+
+
+
 
 	@When("I check for the (\\d+) in step")
 	def I_check_for_the_value_in_step(int value) {
