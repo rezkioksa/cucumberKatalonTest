@@ -21,6 +21,11 @@ import com.kms.katalon.core.annotation.AfterTestCase
 import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import cucumber.api.java.Before
+import cucumber.api.java.After
+
+
 
 class Hooks {
 	@BeforeTestCase
@@ -30,13 +35,19 @@ class Hooks {
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl(GlobalVariable.url)
 		WebUI.maximizeWindow()
+		WebUI.waitForPageLoad(5)
+		def title = WebUI.getWindowTitle()
+		if (!title.contains('tiket.com')) {
+			KeywordUtil.markFailedAndStop('The title of page is not correct!')
+		}
+		
 	}
 	
 	@AfterTestCase
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
 //		println testCaseContext.getTestCaseId()
 //		println testCaseContext.getTestCaseStatus()
-		WebUI.closeBrowser()
+//		WebUI.closeBrowser()
 	}
 	
 	@BeforeTestSuite
@@ -48,4 +59,31 @@ class Hooks {
 	def sampleAfterTestSuite(TestSuiteContext testSuiteContext) {
 		println testSuiteContext.getTestSuiteId()
 	}
+	
+	
+//	------------------ Cucumber ------------------
+	@Before
+	def GotoUrl() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl(GlobalVariable.url)
+		WebUI.maximizeWindow()
+		WebUI.waitForPageLoad(5)
+		def title = WebUI.getWindowTitle()
+		if (!title.contains('tiket.com')) {
+			KeywordUtil.markFailedAndStop('The title of page is not correct!')
+		}
+	}
+	
+	@After
+	def tearDown() {
+//		WebUI.openBrowser('')
+//		WebUI.navigateToUrl(GlobalVariable.url)
+//		WebUI.maximizeWindow()
+//		WebUI.waitForPageLoad(5)
+//		def title = WebUI.getWindowTitle()
+//		if (!title.contains('tiket.com')) {
+//			KeywordUtil.markFailedAndStop('The title of page is not correct!')
+//		}
+	}
+	
 }
