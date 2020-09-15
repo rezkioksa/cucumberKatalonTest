@@ -15,10 +15,17 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 import internal.GlobalVariable
 
 public class Helper {
+	WebDriver driver = DriverFactory.getWebDriver()
 
 	@Keyword
 	def getIndexKeyTestData(String testDataName, String id){
@@ -48,19 +55,26 @@ public class Helper {
 	def getTransalationData(String elementId){
 		String dataTranslation
 		String key = 'translationData_'+GlobalVariable.env;
-				List<List<Object>> allData = findTestData(key).getAllData();
-				int dataSize = allData.size();
-				Boolean foundData = false;
-				int index = 1;
-				for(int i=0; i < dataSize && !foundData; i++) {
-					List<Object> data = allData.get(i);
-					if(data.get(0) == elementId) {
-						foundData = true;
-						index = i+1;
-					}
-				}
+		List<List<Object>> allData = findTestData(key).getAllData();
+		int dataSize = allData.size();
+		Boolean foundData = false;
+		int index = 1;
+		for(int i=0; i < dataSize && !foundData; i++) {
+			List<Object> data = allData.get(i);
+			if(data.get(0) == elementId) {
+				foundData = true;
+				index = i+1;
+			}
+		}
 
 		dataTranslation = findTestData(key).getValue(GlobalVariable.language, index)
 		return dataTranslation
 	}
+	
+	def clickButton(TestObject elementData){
+		WebElement element = WebUiCommonHelper.findWebElement(elementData, 7)
+		JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+		executor.executeScript('arguments[0].click()', element)
+	}
+	
 }

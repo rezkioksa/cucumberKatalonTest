@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>pesawatTo</name>
+   <name>searchNationality</name>
    <tag></tag>
-   <elementGuidId>c922c153-9dcb-42f7-bc2a-bdd13c7ac6b8</elementGuidId>
+   <elementGuidId>133685f7-37a3-4e2d-9ce7-6f2bb044a721</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'productSearchTo']</value>
+         <value>//*[@placeholder = 'Cari negara Anda']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,15 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>placeholder</name>
       <type>Main</type>
-      <value>productSearchTo</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>input</value>
+      <value>Cari negara Anda</value>
    </webElementProperties>
 </WebElementEntity>

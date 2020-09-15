@@ -27,5 +27,27 @@ WebUI.acceptAlert()
 
 WebUI.callTestCase(findTestCase('Login using gmail'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyMatch('', '', false)
+
 WebUI.callTestCase(findTestCase('Login using facebook'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.acceptAlert()
+
+WebUI.scrollToElement(findTestObject(null), 0)
+
+WebUI.verifyElementPresent(findTestObject(null), 0)
+
+WebUI.waitForElementNotPresent(findTestObject(null), 0)
+
+WebUI.verifyElementText(findTestObject(null), '')
+
+WebUI.selectAllOption(findTestObject(null))
+
+WebUI.acceptAlert()
+
+WebUI.getText(findTestObject(null))
+
+WebUI.waitForElementPresent(findTestObject(null), 0)
+
+WebUI.waitForElementNotPresent(findTestObject(null), 0)
 

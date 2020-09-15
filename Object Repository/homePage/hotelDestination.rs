@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'productSearchTo']</value>
+         <value>//input[@id = 'productSearchDestination']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>productSearchTo</value>
+      <value>productSearchDestination</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

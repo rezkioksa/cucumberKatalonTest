@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>pesawatTo</name>
+   <name>flightReturn</name>
    <tag></tag>
-   <elementGuidId>c922c153-9dcb-42f7-bc2a-bdd13c7ac6b8</elementGuidId>
+   <elementGuidId>e1b8c0af-8902-452a-a68e-5eefa1495437</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'productSearchTo']</value>
+         <value>//*[@id = 'productSearchReturnCheckbox']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,13 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>productSearchTo</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>input</value>
+      <value>productSearchReturnCheckbox</value>
    </webElementProperties>
 </WebElementEntity>

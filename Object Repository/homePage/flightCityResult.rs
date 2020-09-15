@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>pesawatTo</name>
+   <name>flightCityResult</name>
    <tag></tag>
-   <elementGuidId>c922c153-9dcb-42f7-bc2a-bdd13c7ac6b8</elementGuidId>
+   <elementGuidId>e7248523-93f0-4cde-8349-cd599519fdf6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'fromDropDownList-airport${number}']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'productSearchTo']</value>
+         <value>//*[@id = 'fromDropDownList-airport']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>productSearchTo</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>input</value>
+      <value>fromDropDownList-airport</value>
    </webElementProperties>
 </WebElementEntity>
