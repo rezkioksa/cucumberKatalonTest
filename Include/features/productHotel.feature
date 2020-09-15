@@ -27,13 +27,10 @@ Create transaction with non-instant payment for xx guest and xx room and login u
     And I wait until 'Object Repository/resultPage/hotelbookingLoading' disappear
     Then I will land on the 'paymentMethodPage' page with element header 'Object Repository/paymentDetailsPage/pageTitle'
     And I click the 'Object Repository/paymentDetailsPage/atmPaymentButton' button
-    
     Then I will able to see the 'Object Repository/paymentDetailsPage/totalPayment'
     Then I will able to see the 'Object Repository/paymentDetailsPage/routeAndOrderId'
     And I click the 'Object Repository/paymentDetailsPage/paymentNextButton' button
-    
     Then I will land on the 'finishPaymentDetails' page with element header 'Object Repository/paymentDetailsPage/finishPaymentHeader'
-    
     Then I will able to see the 'Object Repository/paymentDetailsPage/vaNumber'
     Then I will able to see the 'Object Repository/paymentDetailsPage/totalFinishPayment'
     Then I verify the 'Object Repository/paymentDetailsPage/totalFinishPayment' and 'Object Repository/paymentDetailsPage/totalFinishPayment1' is same
