@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>titel</name>
+   <name>chooseButton</name>
    <tag></tag>
-   <elementGuidId>b752105b-af24-43f0-8001-50816e59e154</elementGuidId>
+   <elementGuidId>1828b07a-e2b4-4474-8396-f844316f3a95</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]/preceding-sibling::input</value>
+         <value>(//*[@class = 'btn-book-now']/div)[${number}]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]</value>
+         <value>//*[@class = 'btn-book-now']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -19,8 +19,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>class</name>
       <type>Main</type>
-      <value>Titel</value>
+      <value>btn-book-now</value>
    </webElementProperties>
 </WebElementEntity>

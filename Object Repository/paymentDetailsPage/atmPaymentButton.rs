@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>detailOrder</name>
+   <name>atmPaymentButton</name>
    <tag></tag>
-   <elementGuidId>ffa81b41-7585-47dc-a519-365563aad507</elementGuidId>
+   <elementGuidId>9516e4e4-278a-4035-9f31-10ec1474cbb3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@class = 'product-name'])[${number}</value>
+         <value>(//*[(text() = 'ATM' or . = 'ATM')])[3]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'product-name']</value>
+         <value>//*[(text() = 'ATM' or . = 'ATM')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -19,8 +19,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>text</name>
       <type>Main</type>
-      <value>product-name</value>
+      <value>ATM</value>
    </webElementProperties>
 </WebElementEntity>

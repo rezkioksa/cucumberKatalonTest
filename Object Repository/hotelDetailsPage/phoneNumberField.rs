@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>titel</name>
+   <name>phoneNumberField</name>
    <tag></tag>
-   <elementGuidId>b752105b-af24-43f0-8001-50816e59e154</elementGuidId>
+   <elementGuidId>147f8ddc-55b9-4a13-bac8-b2b83c62ef06</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]/preceding-sibling::input</value>
+         <value>//*[@class = 'phone-field']//child::input</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]</value>
+         <value>//*[@class = 'phone-field']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -19,8 +19,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>class</name>
       <type>Main</type>
-      <value>Titel</value>
+      <value>phone-field</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>bookNowButton</name>
+   <name>finishPaymentHeader</name>
    <tag></tag>
-   <elementGuidId>1828b07a-e2b4-4474-8396-f844316f3a95</elementGuidId>
+   <elementGuidId>aa17d73f-7312-47ba-ba12-efec83163b5e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//*[@class = 'btn-book-now'])[${number}]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'btn-book-now']</value>
+         <value>//*[@class = 'bank-account-information-title']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn-book-now</value>
+      <value>bank-account-information-title</value>
    </webElementProperties>
 </WebElementEntity>

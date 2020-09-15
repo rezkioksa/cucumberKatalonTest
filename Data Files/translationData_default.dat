@@ -11,9 +11,10 @@
    <data>loginDaftarPageTitle Log+in%2FDaftar null</data>
    <data>fb_emailLabel Email+atau+Telepon%3A null</data>
    <data>fb_passwordLabel Kata+sandi%3A null</data>
-   <data>null null null</data>
-   <data>null null null</data>
-   <data>null null null</data>
+   <data>oredererDetails Detail+Pemesan null</data>
+   <data>paymentMethodPage Metode+Pembayaran null</data>
+   <data>finishPaymentDetails Silahkan+Transfer+ke null</data>
+   <data>payAtHotel Bayar+di+Hotel null</data>
    <data>null null null</data>
    <data>null null null</data>
    <data>null null null</data>
@@ -28,17 +29,17 @@
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>id</name>
-      <size>17</size>
+      <size>18</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>bahasa</name>
-      <size>17</size>
+      <size>18</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
       <name>english</name>
-      <size>17</size>
+      <size>18</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>

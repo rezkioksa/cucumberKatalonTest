@@ -8,8 +8,8 @@
    <dataFileGUID>1becb8dc-7cbe-4526-94d6-9d5ca52f0f54</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>fb_data_1 tiketDotComTest%40gmail.com tiket_Dot10 Uhuy</data>
-   <data>google_data_1 tiketDotComTest%40gmail.com tiket_Dot10 null</data>
+   <data>fb_data_1 tiketDotComTest%40gmail.com tiket_Dot10 Uhuy 082188999988 uhuy+12345</data>
+   <data>google_data_1 tiketDotComTest%40gmail.com tiket_Dot10 null null null</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>id</name>
@@ -28,6 +28,16 @@
    <internalDataColumns>
       <columnIndex>3</columnIndex>
       <name>firstName</name>
+      <size>2</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>4</columnIndex>
+      <name>phoneNumber</name>
+      <size>2</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>5</columnIndex>
+      <name>fullName</name>
       <size>2</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>

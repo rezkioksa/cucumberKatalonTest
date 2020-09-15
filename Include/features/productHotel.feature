@@ -1,38 +1,39 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
 
-  @tag1
-  Scenario: Title of your scenario outline
-    Given I am login using "facebook" account using "data_1"
+@hotel
+Feature: Hotel Transaction
+As a user I want to
+Create transaction with non-instant payment for xx guest and xx room and login using Facebook
+
+  @hotelTransaction
+  Scenario: Create transaction for hotel and login using facebook
+    Given I am login using 'facebook' account using 'fb_data_1'
     And I choose 'hotel' to book
-    #And I choose book "lala"
-    #And I choose "plane" to book
-    #And I fill "Yogyakarta" as the destination city
-    #And I choose check in date "30/10/2020"
-    #And I choose check out date "30/11/2020"
-    #And I choose the 2 guest and 2 rooms
-    #And I submit the search
-    #Then The search results will be displayed
-    #And I filter the result based on the "Total Harga"
-    #Then The search results price will be displayed in "Total Harga"
+    And I fill 'Yogyakarta' as the destination city
+    And I click the 'Object Repository/homePage/closeModal' button
+    And I choose 2 room and 1 guest
+    And I click the 'Object Repository/homePage/doneButton' button
+    And I click the 'Object Repository/homePage/searchButton' button
+    Then The hotel result will be shown
+    Then I filter the hotel result based on the 'payAtHotel'
+    Then I will see the filtered hotel result with 'payAtHotel'
+    And I choose the hotel result number 1
+    Then I move to tab 2
+    And I book room number 1
+    And I wait until 'Object Repository/resultPage/preBookingLoading' disappear
+    And I choose my titel is 'Nona'
+    And I fill the 'Object Repository/hotelDetailsPage/phoneNumberField' with data account 'phoneNumber'
+    And I click the 'Object Repository/flightDetailsPage/toggleSameAsCustomer' button
+    And I click the 'Object Repository/hotelDetailsPage/nextToPayment' button
+    And I wait until 'Object Repository/resultPage/hotelbookingLoading' disappear
+    Then I will land on the 'paymentMethodPage' page with element header 'Object Repository/paymentDetailsPage/pageTitle'
+    And I click the 'Object Repository/paymentDetailsPage/atmPaymentButton' button
     
+    Then I will able to see the 'Object Repository/paymentDetailsPage/totalPayment'
+    Then I will able to see the 'Object Repository/paymentDetailsPage/routeAndOrderId'
+    And I click the 'Object Repository/paymentDetailsPage/paymentNextButton' button
     
+    Then I will land on the 'finishPaymentDetails' page with element header 'Object Repository/paymentDetailsPage/finishPaymentHeader'
+    
+    Then I will able to see the 'Object Repository/paymentDetailsPage/vaNumber'
+    Then I will able to see the 'Object Repository/paymentDetailsPage/totalFinishPayment'
+    Then I verify the 'Object Repository/paymentDetailsPage/totalFinishPayment' and 'Object Repository/paymentDetailsPage/totalFinishPayment1' is same

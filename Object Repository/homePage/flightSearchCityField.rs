@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>titel</name>
+   <name>flightSearchCityField</name>
    <tag></tag>
-   <elementGuidId>b752105b-af24-43f0-8001-50816e59e154</elementGuidId>
+   <elementGuidId>a5fa6ebf-30ea-4490-81dc-004a3058e425</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]/preceding-sibling::input</value>
+         <key>BASIC</key>
+         <value>//*[@class = 'flight-search-airport-city-title']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]</value>
+         <key>XPATH</key>
+         <value>(//*[@class = 'flight-search-airport-city-title'])[${number}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -19,8 +19,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>class</name>
       <type>Main</type>
-      <value>Titel</value>
+      <value>flight-search-airport-city-title</value>
    </webElementProperties>
 </WebElementEntity>

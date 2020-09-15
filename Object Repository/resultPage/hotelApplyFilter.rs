@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>titel</name>
+   <name>hotelApplyFilter</name>
    <tag></tag>
-   <elementGuidId>b752105b-af24-43f0-8001-50816e59e154</elementGuidId>
+   <elementGuidId>971f405d-aaa0-4ec2-ab97-ec147bdce25d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]/preceding-sibling::input</value>
+         <value>//*[@class = 'filter-footer']/button[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]</value>
+         <value>//*[@class = 'filter-footer']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -19,8 +19,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>class</name>
       <type>Main</type>
-      <value>Titel</value>
+      <value>filter-footer</value>
    </webElementProperties>
 </WebElementEntity>

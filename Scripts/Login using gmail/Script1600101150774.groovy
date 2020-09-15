@@ -19,6 +19,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 Helper act = new Helper()
 int login_id = act.getIndexKeyTestData('testData', dataId)
+GlobalVariable.dataIndex = login_id
 
 WebUI.click(findTestObject('homePage/loginButton'),FailureHandling.STOP_ON_FAILURE)
 WebUI.waitForElementPresent(findTestObject('Object Repository/loginPage/signUpTitle'), 0)

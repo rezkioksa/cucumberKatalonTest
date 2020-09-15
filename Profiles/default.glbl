@@ -19,4 +19,9 @@
       <initValue>'bahasa'</initValue>
       <name>language</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>dataIndex</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

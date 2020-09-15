@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>titel</name>
+   <name>headerPage</name>
    <tag></tag>
-   <elementGuidId>b752105b-af24-43f0-8001-50816e59e154</elementGuidId>
+   <elementGuidId>21d3a254-baa4-4c99-86b6-f1609de62adc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]/preceding-sibling::input</value>
+         <key>BASIC</key>
+         <value>//*[@class = 'list-horizontal__middle']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Titel' or . = 'Titel')]</value>
+         <key>XPATH</key>
+         <value>(//*[@class = 'list-horizontal__middle']/h3)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -19,8 +19,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>class</name>
       <type>Main</type>
-      <value>Titel</value>
+      <value>list-horizontal__middle</value>
    </webElementProperties>
 </WebElementEntity>
