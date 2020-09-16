@@ -14,40 +14,5 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-import Helper as Helper
 
-Helper act = new Helper()
-
-def loginTitle = act.getTransalationData('loginDaftarPageTitle')
-
-println(loginTitle)
-
-WebUI.acceptAlert()
-
-WebUI.callTestCase(findTestCase('Login using gmail'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyMatch('', '', false)
-
-WebUI.callTestCase(findTestCase('Login using facebook'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.acceptAlert()
-
-WebUI.scrollToElement(findTestObject(null), 0)
-
-WebUI.verifyElementPresent(findTestObject(null), 0)
-
-WebUI.waitForElementNotPresent(findTestObject(null), 0)
-
-WebUI.verifyElementText(findTestObject(null), '')
-
-WebUI.selectAllOption(findTestObject(null))
-
-WebUI.acceptAlert()
-
-WebUI.getText(findTestObject(null))
-
-WebUI.waitForElementPresent(findTestObject(null), 0)
-
-WebUI.waitForElementNotPresent(findTestObject(null), 0)
-
+CucumberKW.runWithCucumberRunner(CucumberEARunner.class)

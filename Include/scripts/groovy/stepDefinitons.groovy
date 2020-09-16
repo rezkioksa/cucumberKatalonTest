@@ -242,7 +242,7 @@ class stepDefinitons {
 		//		For Guest
 		while(i<=guest-1){
 			//		(1..guest-1).each {
-//			println "Loop number = ${it}"
+			//			println "Loop number = ${it}"
 			WebUI.click(findTestObject('Object Repository/homePage/plusButton',[('number') : '1']),FailureHandling.STOP_ON_FAILURE)
 			WebUI.delay(1)
 			i++
@@ -251,7 +251,7 @@ class stepDefinitons {
 		//		For Room
 		while(j<=room-1){
 			//		(1..room-1).each {
-//			println "Loop Number = ${it}"
+			//			println "Loop Number = ${it}"
 			WebUI.click(findTestObject('Object Repository/homePage/plusButton',[('number') : '2']),FailureHandling.STOP_ON_FAILURE)
 			WebUI.delay(1)
 			j++
