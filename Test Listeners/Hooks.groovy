@@ -76,14 +76,7 @@ class Hooks {
 	
 	@After
 	def tearDown() {
-//		WebUI.openBrowser('')
-//		WebUI.navigateToUrl(GlobalVariable.url)
-//		WebUI.maximizeWindow()
-//		WebUI.waitForPageLoad(5)
-//		def title = WebUI.getWindowTitle()
-//		if (!title.contains('tiket.com')) {
-//			KeywordUtil.markFailedAndStop('The title of page is not correct!')
-//		}
+		WebUI.closeBrowser()
 	}
 	
 }
